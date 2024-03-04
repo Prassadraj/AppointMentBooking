@@ -14,6 +14,8 @@ const LoginPage = () => {
       
       <Form layout='vertical' onFinish={onfinishHandler} className='border-2 w-96 border-black p-20 rounded'>
       <h1 className='text-3xl text-center'>Login Form</h1>
+      
+<h3>{import.meta.env.VITE_MongoURL}</h3>
 
        <Form.Item label='Email' name='email'>
         <Input type='Email' required/>
